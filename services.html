@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xizmatlar - Yangiliklar Portali</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+            background-image: url('fon.jpg'); /* Rasm URL manzili */
+            background-size: auto; /* Rasmni to'liq ekran bo'ylab kengaytirish */
+            background-position: center; /* Rasmni markazga joylashtirish */
+            background-repeat: no-repeat; /* Rasmni takrorlamaslik */
+        }
+
+        /* Navbar Style (Initially hidden) */
+        #navbar {
+            display: none;
+        }
+
+        /* Center the buttons */
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+
+        /* Style for form inputs */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Login Form */
+        #login-form, #signup-form {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Success Message styles */
+        #success-message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4e73df;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #navbar {
+            display: block; /* Menyuni ko'rsatish */
+            background-color: #333; /* Orqa fon rangi */
+            padding: 10px 0; /* Yuqori va pastki cheklovlar */
+            border-radius: 5px; /* Ramkaning burchaklarini yumshatish */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soyalar */
+        }
+
+        #navbar ul {
+            list-style: none; /* Belgilarni olib tashlash */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Menyu elementlarini yonma-yon joylashtirish */
+            justify-content: center; /* Elementlar orasidagi masofani tenglashtirish */
+        }
+
+        #navbar li {
+            margin: 0 10px; /* Elementlar orasiga bo'shliq qo'shish */
+        }
+
+        #navbar a {
+            text-decoration: none; /* Belgilarni ostiga chizishlarni olib tashlash */
+            color: white; /* Matn rangi */
+            font-size: 16px; /* Matn o'lchami */
+            padding: 10px 15px; /* Ichki bo'shliqlar */
+            display: block; /* Linkni to'liq maydonni qamrab olish */
+            border-radius: 3px; /* Burchaklarni yumshatish */
+        }
+
+        /* Hover effekt */
+        #navbar a:hover {
+            background-color: #555; /* Hoverda orqa fon rangi */
+        }
+
+</style>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="head.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Sayt haqida</a></li>
+            <li><a href="services.html">Xizmatlar</a></li>
+            <li><a href="news.html">Yangiliklar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+            <li><a href="dashboard.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Bizning Xizmatlar</h1>
+        <p>Yangiliklar Portalida biz sizni dunyoning turli burchaklaridan eng so'nggi yangiliklar bilan xabardor qilamiz.</p>
+
+        <h2>So'nggi yangiliklar</h2>
+        <p>Biz turli toifalarda, masalan, texnologiya, sport, sog'liq va biznes kabi sohalarda o'z vaqtida va aniq yangiliklarni taqdim etamiz.</p>
+
+        <h2>Yangiliklar portali Xabarlari</h2>
+        <p>Shov-shuvli voqealar sodir bo'lganda, darhol xabar olish uchun yangiliklar portalidan ro'yxatdan o'ting.</p>
+
+        <h2>Maqola Yuborish</h2>
+        <p>Biz foydalanuvchilarga o'z yangilik maqolalarini platformamizda ulashish uchun yuborish imkonini beramiz. Agar sizda qiziqarli biror narsa bo'lsa, biz sizni eshitishga tayyormiz!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
