@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh sahifa - Yangiliklar Portali</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+    /* Navbar Style (Initially hidden) */
+    #navbar {
+            display: none;
+        }
+
+        /* Center the buttons */
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+
+        /* Style for form inputs */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Login Form */
+        #login-form, #signup-form {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Success Message styles */
+        #success-message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4e73df;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #navbar {
+            display: block; /* Menyuni ko'rsatish */
+            background-color: #333; /* Orqa fon rangi */
+            padding: 10px 0; /* Yuqori va pastki cheklovlar */
+            border-radius: 5px; /* Ramkaning burchaklarini yumshatish */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soyalar */
+        }
+
+        #navbar ul {
+            list-style: none; /* Belgilarni olib tashlash */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Menyu elementlarini yonma-yon joylashtirish */
+            justify-content: center; /* Elementlar orasidagi masofani tenglashtirish */
+        }
+
+        #navbar li {
+            margin: 0 10px; /* Elementlar orasiga bo'shliq qo'shish */
+        }
+
+        #navbar a {
+            text-decoration: none; /* Belgilarni ostiga chizishlarni olib tashlash */
+            color: white; /* Matn rangi */
+            font-size: 16px; /* Matn o'lchami */
+            padding: 10px 15px; /* Ichki bo'shliqlar */
+            display: block; /* Linkni to'liq maydonni qamrab olish */
+            border-radius: 3px; /* Burchaklarni yumshatish */
+        }
+
+        /* Hover effekt */
+        #navbar a:hover {
+            background-color: #555; /* Hoverda orqa fon rangi */
+        }
+
+
+</style>
+
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="head.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Sayt haqida</a></li>
+            <li><a href="services.html">Xizmatlar</a></li>
+            <li><a href="news.html">Yangiliklar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+            <li><a href="dashboard.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <select id="categorySelect" onchange="filterNews()">
+        <option value="all">Barcha Yangiliklar</option>
+        <option value="sport">Sport</option>
+        <option value="politics">Siyosat</option>
+        <option value="technology">Texnologiya</option>
+        <option value="entertainment">Kulgili</option>
+    </select>
+
+    <main>
+        <section class="news-container" id="newsContainer">
+            <article class="news-item sport">
+                <h2>Sport Yangiligi 1</h2>
+                <p>Sport bo'yicha yangiliklar...</p>
+            </article>
+            <article class="news-item politics">
+                <h2>Siyosat Yangiligi 1</h2>
+                <p>Siyosat bo'yicha yangiliklar...</p>
+            </article>
+            <article class="news-item technology">
+                <h2>Texnologiya Yangiligi 1</h2>
+                <p>Texnologiya bo'yicha yangiliklar...</p>
+            </article>
+            <article class="news-item entertainment">
+                <h2>Kulgili Yangilik 1</h2>
+                <p>Kulgili yangiliklar...</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="scr.js"></script>
+</body>
+</html>
